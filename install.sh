@@ -35,14 +35,6 @@ cd /usr/src/ && git clone -b 13 http://gerrit.asterisk.org/asterisk asterisk13 &
 ./configure --libdir=/usr/lib64 --with-jansson-bundled && make menuselect && make && make install && make samples && make config && make clean && make distclean && service asterisk start
 
 
-old
-cd /usr/src/ && wget http://downloads.asterisk.org/pub/telephony/asterisk/old-releases/asterisk-11.25.3.tar.gz && tar -zxvf asterisk-11.25.3.tar.gz && rm -rf cd /asterisk-11.25.3.tar.gz && cd /usr/src/asterisk-11* && ./configure --libdir=/usr/lib64 && make menuselect && make && make install && make samples && make config && make clean && make distclean && service asterisk start 
-
-
-google tts
-
-cd /tmp && wget https://github.com/zaf/asterisk-speech-recog/archive/master.tar.gz && tar -zxvf master.tar.gz && cd asterisk-speech-recog-master && cp -rf *.agi /var/lib/asterisk/agi-bin/
-
 
 adduser asterisk && passwd asterisk 
 
