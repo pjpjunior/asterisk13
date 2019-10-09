@@ -1,6 +1,3 @@
-centos7
-http://li.nux.ro/download/nux/dextop/el7/x86_64/nux-dextop-release-0-5.el7.nux.noarch.rpm
-
 yum update -y && yum install -y make wget svn openssl-devel ncurses-devel newt-devel libxml2-devel kernel-devel gcc gcc-c++ sqlite-devel libuuid-devel ntp perl perl-libwww-perl sox cpan mpg123 ffmpeg openssl openssl-devel sudo git iptables-services bzip2 clang && ntpdate a.ntp.br && chkconfig ntpd on  && reboot                         
 // sed -i s/SELINUX=enforcing/SELINUX=disabled/g /etc/selinux/config
 
